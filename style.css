@@ -10,24 +10,35 @@ body {
 }
 h1 {
     margin-top: 16px;
-    color: black;
+    color: rgb(232, 232, 50);
     font-weight: bolder;
     font-size: 4em;
+    text-align: center;
+}
+h2 {
+    margin-top: 16px;
+    color: rgb(232, 232, 50);
+    font-weight: bolder;
+    font-size: 4em;
+    text-align: center;
 }
 nav {
-    margin-top: 5em;
+    background-color: rgb(9, 9, 96);
+    text-align: center;
+    
 }
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 25px;
     padding: 35px;
+    margin-top: 20px;
 }
 .cabeçalho {
     width: 100%;
-    background-color: aliceblue;
-    padding: 30px;
+    background-color: rgb(143, 7, 7);
+    padding: 60px;
     text-align: center;
     border-radius: 3px;
 }
