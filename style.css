@@ -3,18 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Adiciona a fonte: "Stoked" no CSS */
 @font-face {
     font-family: "stoked";
     src: url(stoked.ttf);
 }
-
+/* Estilização do body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(12, 12, 65);
     color: white;
 }
-
+/* Estilização do Título e Subtítulo */
 h1, h2 {
     font-family: "stoked", sans-serif;
     margin-top: 16px;
@@ -23,13 +23,13 @@ h1, h2 {
     font-size: 4.5em;
     text-align: center;
 }
-
+/* Estilização do Nav */
 nav {
     background-color: rgb(9, 9, 96);
     padding: 8px;
     text-align: center;
 }
-
+/* Estilização dos links */
 a {
     text-decoration: none;
     color: white;
@@ -38,7 +38,7 @@ a {
     padding: 35px;
     margin-top: 20px;
 }
-
+/* Estilização da Div Cabeçalho*/
 .cabecalho {
     width: 100%;
     background-color: rgb(143, 7, 7);
