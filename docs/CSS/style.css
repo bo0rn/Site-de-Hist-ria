@@ -97,43 +97,51 @@ p {
     margin-right: 6%;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 2em;
+    color: white;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+
 /* Responsividade */
 @media screen and (max-width: 780px) {
     h1, h2 {
         font-size: 2.5em;
     }
 
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    a {
-        font-size: 1.5em;
-        padding: 10px;
+    .menu-toggle {
         display: block;
     }
 
-    .bandeira_imagem {
-        margin-top: 5em;
-        width: 90%;
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    nav.ativo {
+        display: flex;
+    }
+
+    nav a {
+        font-size: 1.5em;
+        padding: 10px;
     }
 
     .cabecalho {
         height: 200px;
     }
 
-    .titulo_container {
-        padding: 10px;
-    }
-
-    .rivais {
-        display: block;
-        margin: auto;
+    .bandeira_imagem {
+        margin-top: 2em;
         width: 90%;
-        max-width: 400px;
-        margin-top: 20px;
-        margin-right: 16%;
     }
 }
