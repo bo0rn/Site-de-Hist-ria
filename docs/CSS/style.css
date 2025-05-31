@@ -6,17 +6,17 @@
 
 @font-face {
     font-family: "kapra";
-    src: url(Typoforge-Studio-Kapra-Neue-Pro-Medium.otf)
+    src: url(../Fontes/Typoforge-Studio-Kapra-Neue-Pro-Medium.otf)
 }
 
 @font-face {
     font-family: "almarena";
-    src: url(AlmarenaBold.otf)
+    src: url(../Fontes/AlmarenaBold.otf)
 }
 
 @font-face {
     font-family: "stoked";
-    src: url(stoked.ttf);
+    src: url(../Fontes/stoked.ttf);
 }
 
 body {
@@ -61,7 +61,7 @@ p {
 .cabecalho {
     width: 100%;
     height: 300px;
-    background-image: url("socialismo.png");
+    background-image: url("../Imagens/socialismo.png");
     background-size: cover;
     background-position: center;
     position: relative;
