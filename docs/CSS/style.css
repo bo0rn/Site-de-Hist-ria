@@ -35,13 +35,14 @@ h1, h2 {
 
 nav {
     background-color: rgb(9, 9, 96);
-    padding: 8px;
+    padding: 5px;
     justify-content: center;
     display: flex;
     gap: 80px;
 }
 
 a {
+    font-family: "almarena", sans-serif;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -82,9 +83,9 @@ p {
 
 .bandeira_imagem {
     display: block;
-    margin: 2% auto;
-    width: 80%;
-    max-width: 800px;
+    margin-top: 10%;
+    margin-left: 61px;
+    border-radius: 3%;
 }
 
 .rivais {
@@ -97,27 +98,10 @@ p {
     margin-right: 6%;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 2em;
-    color: white;
-    background: none;
-    border: none;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    z-index: 10;
-    cursor: pointer;
-}
-
 /* Responsividade */
 @media screen and (max-width: 780px) {
     h1, h2 {
         font-size: 2.5em;
-    }
-
-    .menu-toggle {
-        display: block;
     }
 
     nav {
@@ -138,10 +122,28 @@ p {
 
     .cabecalho {
         height: 200px;
+        background-color: red;
+        width: 100%;
     }
 
     .bandeira_imagem {
         margin-top: 2em;
-        width: 90%;
+        margin-top: 60px;
+        margin-left: 50px;
+        width: 70%;
+        border-radius: 10px;
+    }
+
+    .subtitulo {
+        font-size: 40px;
+        margin-right: none;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    p {
+        font-size: 20px;
+        padding: 3px;
+        margin-left: 50px;
     }
 }
