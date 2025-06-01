@@ -4,14 +4,15 @@
     box-sizing: border-box;
 }
 
+/* Adiciona três fontes */
 @font-face {
     font-family: "kapra";
-    src: url(../Fontes/Typoforge-Studio-Kapra-Neue-Pro-Medium.otf)
+    src: url(../Fontes/Typoforge-Studio-Kapra-Neue-Pro-Medium.otf);
 }
 
 @font-face {
     font-family: "almarena";
-    src: url(../Fontes/AlmarenaBold.otf)
+    src: url(../Fontes/AlmarenaBold.otf);
 }
 
 @font-face {
@@ -58,7 +59,7 @@ p {
     margin-right: 30%;
     margin-top: 2%;
 }
-
+ 
 .cabecalho {
     width: 100%;
     height: 300px;
@@ -72,13 +73,13 @@ p {
     flex-direction: column;
 }
 
+/* Configurações dos subtítulos */
 .subtitulo {
     font-weight: bold;
     font-family: "kapra", sans-serif;
     font-size: 50px;
     margin-left: 5%;
     margin-top: 10%;
-
 }
 
 .bandeira_imagem {
@@ -98,52 +99,91 @@ p {
     margin-right: 6%;
 }
 
-/* Responsividade */
+/* Faz com que o menu para mobile não apareça para telas grandes */
+.mobile-menu-botao {
+    display: none;
+}
+
+/* Faz com que os links e o menu não apareça em telas grandes */
+.mobile-menu {
+    display: none;
+}
+
+/* Responsividade para telas pequenas */
 @media screen and (max-width: 780px) {
+
     h1, h2 {
         font-size: 2.5em;
+        margin-left: none;
     }
 
     nav {
         display: none;
         flex-direction: column;
-        align-items: center;
         gap: 0;
-    }
-
-    nav.ativo {
-        display: flex;
-    }
-
-    nav a {
-        font-size: 1.5em;
-        padding: 10px;
     }
 
     .cabecalho {
         height: 200px;
+        align-items: right;
+        background-image: none;
         background-color: red;
         width: 100%;
     }
 
     .bandeira_imagem {
-        margin-top: 2em;
-        margin-top: 60px;
+        margin-top: 80px;
         margin-left: 50px;
-        width: 70%;
+        width: 50%;
         border-radius: 10px;
     }
 
     .subtitulo {
-        font-size: 40px;
+        font-size: 16px;
         margin-right: none;
-        margin-top: 100px;
+        margin-top: 80px;
         margin-left: 50px;
     }
 
     p {
-        font-size: 20px;
+        font-size: 10px;
         padding: 3px;
         margin-left: 50px;
+    }
+
+    /* Configurações da imagem do menu de celular */ 
+    .icone {
+        width: 40px;
+    }
+
+    .mobile-menu-botao {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 90%;
+    }
+
+    /* Configurações do <button> */
+    .mobile-menu-botao button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu a {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5px;
+        padding: 7px;
+    }
+
+    /* Exibe o menu ao clicar no botão */
+    .mobile-menu.open {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(9, 9, 96);
+        gap: 9px;
     }
 }
