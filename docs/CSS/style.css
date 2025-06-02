@@ -59,7 +59,11 @@ p {
     margin-right: 30%;
     margin-top: 2%;
 }
- 
+footer {
+    background-color: #930707f3;
+    padding: 45px;
+    margin-top: 15%;
+}
 .cabecalho {
     width: 100%;
     height: 300px;
@@ -79,14 +83,15 @@ p {
     font-family: "kapra", sans-serif;
     font-size: 50px;
     margin-left: 5%;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 .bandeira_imagem {
     display: block;
-    margin-top: 10%;
+    margin-top: 4%;
     margin-left: 61px;
     border-radius: 3%;
+    
 }
 
 .rivais {
@@ -95,7 +100,7 @@ p {
     width: 80%;
     max-width: 400px;
     float: right;
-    margin-top: -360px;
+    margin-top: -320px;
     margin-right: 6%;
 }
 
@@ -145,6 +150,15 @@ p {
         margin-left: 50px;
     }
 
+    .rivais {
+        display: block;
+        margin: auto;
+        width: 80%;
+        max-width: 400px;
+        margin-top: 60px;
+        margin-right: 16%;
+    }
+
     p {
         font-size: 10px;
         padding: 3px;
@@ -159,8 +173,8 @@ p {
     .mobile-menu-botao {
         display: block;
         position: absolute;
-        top: 20px;
-        right: 85%;
+        top: 10em;
+        justify-content: center;
     }
 
     /* Configurações do <button> */
@@ -185,5 +199,10 @@ p {
         flex-direction: column;
         background-color: rgb(9, 9, 96);
         gap: 9px;
+    }
+
+    footer {
+        background-color: red;
+        margin-top: 100%;
     }
 }
