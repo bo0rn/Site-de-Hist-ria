@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cor1: #0c0c41;
+    --cor2: #ffffffe9;
+    --cor3: #d6d627;
+    --cor4: #090960;
+    --cor5: #ffffff;
+    --cor6: #ff0000;
+    --cor7: #ffff00;
+    --footer: #930707f3;
+}
 /* Adiciona três fontes */
 @font-face {
     font-family: "kapra";
@@ -22,37 +32,43 @@
 
 body {
     font-family: "almarena", sans-serif;
-    background-color: rgb(12, 12, 65);
-    color: rgba(255, 255, 255, 0.915);
+    background-color: var(--cor1);
+    color: var(--cor2);
 }
 
 h1, h2 {
     font-family: "stoked", sans-serif;
-    color: rgb(214, 214, 39);
+    color: var(--cor3);
     font-weight: bolder;
     font-size: 5em;
     margin-left: 6%;
 }
 
 nav {
-    background-color: rgb(9, 9, 96);
+    background-color: var(--cor4);
     padding: 5px;
     justify-content: center;
     display: flex;
     gap: 80px;
 }
 
-a {
+a{
     font-family: "almarena", sans-serif;
     text-decoration: none;
-    color: white;
+    color: var(--cor5);
     font-weight: bold;
     font-size: 25px;
     padding: 20px 0;
     display: block;
     text-align: center;
+    transition: 0.3s;
 }
-
+a:hover{
+    background-color: var(--cor6);
+    color: var(--cor7);
+    padding: 10px;
+    border-radius: 10px;
+}
 p {
     font-size: 29px;
     margin-left: 5%;
@@ -60,9 +76,10 @@ p {
     margin-top: 2%;
 }
 footer {
-    background-color: #930707f3;
+    background-color: var(--footer);
     padding: 45px;
     margin-top: 15%;
+    
 }
 .cabecalho {
     width: 100%;
@@ -86,22 +103,16 @@ footer {
     margin-top: 3%;
 }
 
-.bandeira_imagem {
-    display: block;
-    margin-top: 4%;
-    margin-left: 61px;
-    border-radius: 3%;
-    
+.img {
+    border: 6px solid var(--cor6);
+    border-radius: 8px;
 }
 
-.rivais {
-    display: block;
-    margin: auto;
-    width: 80%;
-    max-width: 400px;
-    float: right;
-    margin-top: -320px;
-    margin-right: 6%;
+img {
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 2%;
 }
 
 /* Faz com que o menu para mobile não apareça para telas grandes */
@@ -128,41 +139,32 @@ footer {
         gap: 0;
     }
 
+    img {
+        width: 60%;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 2%;
+    }
+
     .cabecalho {
         height: 200px;
         align-items: right;
         background-image: none;
-        background-color: red;
+        background-color: var(--footer);
         width: 100%;
     }
 
-    .bandeira_imagem {
-        margin-top: 80px;
-        margin-left: 50px;
-        width: 50%;
-        border-radius: 10px;
-    }
-
     .subtitulo {
-        font-size: 16px;
+        font-size: 24px;
         margin-right: none;
-        margin-top: 80px;
-        margin-left: 50px;
-    }
-
-    .rivais {
-        display: block;
-        margin: auto;
-        width: 80%;
-        max-width: 400px;
-        margin-top: 60px;
-        margin-right: 16%;
+        margin-top: 20px;
+        margin-left: 40px;
     }
 
     p {
-        font-size: 10px;
+        font-size: 16px;
         padding: 3px;
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     /* Configurações da imagem do menu de celular */ 
@@ -197,12 +199,12 @@ footer {
     .mobile-menu.open {
         display: flex;
         flex-direction: column;
-        background-color: rgb(9, 9, 96);
+        background-color: var(--cor4);
         gap: 9px;
     }
 
     footer {
-        background-color: red;
+        background-color: var(--footer);
         margin-top: 100%;
     }
 }
