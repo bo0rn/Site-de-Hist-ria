@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: #0c0c41;
+    --cor2: #ffffffe9;
+    --cor3: #d6d627;
+    --cor4: #090960;
+    --cor5: #ffffff;
+    --cor6: #ff0000;
+    --cor7: #ffff00;
+    --footer: #930707f3;
+}
+/* Adiciona três fontes */
+@font-face {
+    font-family: "kapra";
+    src: url(../Fontes/Typoforge-Studio-Kapra-Neue-Pro-Medium.otf);
+}
+
+@font-face {
+    font-family: "stoked";
+    src: url(../Fontes/stoked.ttf);
+}
+
+@font-face {
+    font-family: "almarena";
+    src: url(../Fontes/AlmarenaBold.otf);
+}
+
+body {
+    background-color: var(--cor1);
+    color: var(--cor2);
+
+}
+
+h1, h2 {
+    font-family: "stoked", sans-serif;
+    color: var(--cor3);
+    font-weight: bolder;
+    font-size: 5em;
+    margin-left: 6%;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 5px;
+    justify-content: center;
+    display: flex;
+    gap: 80px;
+}
+
+a {
+    font-family: "almarena", sans-serif;
+    text-decoration: none;
+    color: var(--cor5);
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px 0;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+a:hover{
+    background-color: var(--cor6);
+    color: var(--cor7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 29px;
+    margin-left: 5%;
+    margin-right: 30%;
+    margin-top: 2%;
+    
+}
+
+footer {
+    background-color: var(--footer);
+    padding: 45px;
+    margin-top: 15%;
+    
+}
+
+.cabecalho {
+    width: 100%;
+    height: 300px;
+    background-image: url("../Imagens/socialismo.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Configurações dos subtítulos */
+.subtitulo {
+    font-weight: bold;
+    font-family: "kapra", sans-serif;
+    font-size: 50px;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.img {
+    border: 6px solid var(--cor6);
+    border-radius: 8px;
+}
+
+img {
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+/* Faz com que o menu para mobile não apareça para telas grandes */
+.mobile-menu-botao {
+    display: none;
+}
+
+/* Faz com que os links e o menu não apareça em telas grandes */
+.mobile-menu {
+    display: none;
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 780px) {
+
+    h1, h2 {
+        font-size: 2.2em;
+        margin-left: none;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 7%;
+    }
+
+    .cabecalho {
+        height: 200px;
+        align-items: right;
+        background-image: none;
+        background-color: var(--footer);
+        width: 100%;
+    }
+
+    .subtitulo {
+        font-size: 30px;
+        margin-right: 0;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        padding: 3px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    /* Configurações da imagem do menu de celular */ 
+    .icone {
+        width: 40px;
+    }
+
+    .mobile-menu-botao {
+        display: block;
+        position: absolute;
+        top: 10em;
+        justify-content: center;
+    }
+
+    /* Configurações do <button> */
+    .mobile-menu-botao button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu a {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 5px;
+        padding: 7px;
+    }
+
+    /* Exibe o menu ao clicar no botão */
+    .mobile-menu.open {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cor4);
+        gap: 9px;
+    }
+
+    footer {
+        background-color: var(--footer);
+        margin-top: 100%;
+    }
+}
